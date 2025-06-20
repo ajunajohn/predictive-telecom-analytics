@@ -3,7 +3,6 @@ A capstone project focused on identifying key factors behind customer churn in t
 
 👩‍💻 Author
 Ajuna P John
-Date: June 2021
 
 📌 Project Objective
 Customer attrition is a major challenge in the telecom sector. This project aims to:
