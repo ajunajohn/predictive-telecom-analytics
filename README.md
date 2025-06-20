@@ -1,98 +1,72 @@
-Telecom Churn Analysis
-Project Overview
-This project analyzes customer churn behavior in the telecom sector using a dataset with over 26,000 customer records and 81 variables. The objective is to identify the factors influencing churn, build predictive models, and recommend actionable insights to proactively reduce churn rates and enhance customer retention.
+📊 Telecom Churn Analysis
+A capstone project focused on identifying key factors behind customer churn in the telecom industry and building predictive models to proactively reduce churn.
 
-Author
+👩‍💻 Author
 Ajuna P John
-June 2021
+Great Lakes Institute of Management
+Date: June 2021
 
-Problem Statement
-Telecom providers are facing rising customer attrition. Current reactive strategies are insufficient. This project seeks to:
+📌 Project Objective
+Customer attrition is a major challenge in the telecom sector. This project aims to:
 
-Derive insights from customer behavior
+Analyze customer behavior using a rich telecom dataset.
 
-Predict churn likelihood using statistical and machine learning models
+Predict churn using machine learning models.
 
-Recommend interventions to reduce churn
+Recommend strategic actions for churn prevention.
 
-Dataset
-Name: Telecom_Sampled.csv
+📂 Dataset Overview
+Source: Telecom_Sampled.csv
 
-Observations: 26,518
+Records: 26,518 customers
 
-Features: 81 (47 continuous, 34 categorical)
+Features: 81 variables
 
-Target Variable: churn (0 = Non-Churn, 1 = Churn)
+Target: churn (1 = Churned, 0 = Not Churned)
 
-Methodology
-Data Preprocessing
-Handled missing values using median imputation and KNN for categorical variables
+⚙️ Methodology
+🧹 Data Preprocessing
+Imputation of missing values (Median & KNN)
 
-Outlier treatment via capping/flooring
+Outlier detection and treatment via capping/flooring
 
-Transformation of variables including factor conversions
+Transformation of skewed variables
 
-Dropped high-missing or irrelevant variables
+Removal of irrelevant and high-missing-value features
 
-Exploratory Data Analysis (EDA)
-Univariate and bivariate analyses performed
+🔍 Exploratory Data Analysis
+Univariate and bivariate analysis
 
-Chi-square and correlation tests used
+Factor analysis and PCA for dimensionality reduction
 
-Factor analysis and PCA for dimension reduction
+Identification of key churn influencers
 
-Modeling Techniques Used
-Logistic Regression
+🤖 Modeling Techniques
+Model	Accuracy (Test)	AUC
+Logistic Regression	75.86%	0.625
+LDA	75.8%	0.627
+CART	73.68%	0.603
+Random Forest (Tuned)	76.34%	0.669
 
-Linear Discriminant Analysis (LDA)
+💡 Key Insights
+Minutes of Usage, Billing Factors, and Equipment Age are strong churn predictors.
 
-Classification and Regression Trees (CART)
+Service issues like dropped calls significantly affect customer retention.
 
-Random Forest (with tuning)
+Random Forest outperformed other models in predictive performance.
 
-Stepwise AIC Regression
+✅ Recommendations
+Offer flexible, customized plans to boost engagement.
 
-Model Evaluation Metrics
-Accuracy
+Improve network quality to reduce dropped/blocked calls.
 
-Confusion Matrix
+Reassess billing strategies to retain at-risk customers.
 
-ROC Curve and AUC Score
+Use targeted campaigns based on customer demographics.
 
-Key Findings
-Churn is influenced heavily by:
+🧰 Tech Stack
+Language: R
 
-Minutes of usage
+Libraries: ggplot2, caret, rpart, MASS, randomForest
 
-Customer and equipment characteristics
-
-Cost and billing variables
-
-Network quality (dropped/blocked calls)
-
-Random Forest performed best:
-
-Train Accuracy: 97.02%
-
-Test Accuracy: 76.34%
-
-AUC: 0.6686
-
-Recommendations
-Flexible Plans: Offer customized packages based on usage to retain customers.
-
-Improve Network Quality: Address dropped/blocked call issues.
-
-Proactive Billing Strategies: Revise plans before customer dissatisfaction grows.
-
-Targeted Marketing: Focus on specific customer demographics for retention campaigns.
-
-
-Tools & Technologies
-R
-
-Data Visualization (ggplot2)
-
-Statistical Analysis
-
-Machine Learning Models
+Tools: RStudio, Excel
