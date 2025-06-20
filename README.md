@@ -3,7 +3,6 @@ A capstone project focused on identifying key factors behind customer churn in t
 
 👩‍💻 Author
 Ajuna P John
-Great Lakes Institute of Management
 Date: June 2021
 
 📌 Project Objective
